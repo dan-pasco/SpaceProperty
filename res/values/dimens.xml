@@ -1,0 +1,12 @@
+<resources>
+
+    <dimen name="title">17dip</dimen>
+    <dimen name="rating">15dip</dimen>
+    <dimen name="genre">13dip</dimen>
+    <dimen name="year">12dip</dimen>
+     <dimen name="name">20dip</dimen>
+     <dimen name="property_name">30dip</dimen>
+     <dimen name="description">15dip</dimen>
+    
+
+</resources>

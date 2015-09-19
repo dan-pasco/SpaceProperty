@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+
+      <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentTop="true"
+       />
+      
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView1"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp" >
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/scroll1"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp" />
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/scroll2"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp" />
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/scroll3"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp" />
+            
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/scroll4"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp" />
+            
+        </LinearLayout>
+    </HorizontalScrollView>
+    <View
+    android:layout_width="fill_parent"
+    android:layout_height="1dp"
+    android:background="@android:color/darker_gray"/>
+    
+    <TextView 
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/property_name_details"
+        android:layout_below="@id/horizontalScrollView1"
+        android:text = "Property Name" 
+        android:textStyle="bold"
+        android:textSize="@dimen/property_name"
+        android:paddingLeft="5dp"
+          />
+
+    <ImageView
+        android:id="@+id/bedroom_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/property_name_details"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:src="@drawable/bedroom" />
+
+    <TextView
+        android:id="@+id/bedroom_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bedroom_image"
+        android:layout_toRightOf="@+id/bedroom_image"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:text="12"
+        android:textSize="@dimen/genre" />
+
+    <ImageView
+        android:id="@+id/toilet_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/bedroom_number"
+        android:layout_alignBottom="@id/bedroom_number"
+        android:src="@drawable/toilet" 
+        android:layout_marginLeft="20dp"/>
+    
+    <TextView
+        android:id="@+id/bathroom_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/bedroom_number"
+        android:layout_toRightOf="@id/toilet_image"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:text="12"
+        android:textSize="@dimen/genre" />
+
+    <ImageView
+        android:id="@+id/price_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/toilet_image"
+        android:layout_toRightOf="@id/bathroom_number"
+        android:paddingLeft="20dp"
+        android:src="@drawable/price" />
+    
+    
+    
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/bedroom_number"
+        android:layout_toRightOf="@id/price_image"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:text="12"
+        android:textSize="@dimen/genre" />
+    
+     <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bedroom_image"
+         android:paddingLeft="5dp"
+         android:layout_marginTop="10dp"
+        android:text="The Quick Brown Fox Jumps Over The Lazy Dog. The Quick Brown Fox Jumps Over the Lazy Dog."
+        android:textSize="@dimen/description" />
+
+     <Button
+         android:id="@+id/qualify_button"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_alignParentRight="true"
+         android:layout_marginBottom="14dp"
+         android:layout_marginRight="16dp"
+         android:text="Calculator" />
+
+</RelativeLayout>
